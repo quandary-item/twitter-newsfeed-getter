@@ -1,0 +1,27 @@
+{
+  "description": "Saves the response content when the Twitter newsfeed is requested",
+  "manifest_version": 2,
+  "name": "twitter-newsfeed-getter",
+  "version": "1.0",
+  "homepage_url": "https://www.google.com",
+  "icons": {
+    "48": "pen.svg"
+  },
+    
+  "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "downloads",
+      "https://twitter.com/i/timeline*"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "applications": {
+    "gecko": {
+      "strict_min_version": "57.0a1"
+    }
+  }
+}
